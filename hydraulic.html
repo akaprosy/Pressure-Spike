@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+   <title>Pressure Spike</title>
+   <link href="style.css"  rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head> 
+
+  <body>
+   <header>
+   <img src="PressureSpike2.png" alt="Pressure Spike" width="20%" class="pressurespike">
+   
+   <div id="mainnav">
+   <span>About</span>
+   <span>Links</span>
+   <span>Blog</span>
+   <span>Contact</span> 
+ </div>
+    <br>
+    <br>
+    
+     <nav id="container">      
+       <div class="box"><button>Mechanical</button></div>
+        <div class="box"><button>Hydraulics</button></div>
+         <div class="box"><button>Pneumatics</button></div>
+          <div class="box"><button>Electrical</button></div>
+           <div class="box"><button>Controls</button></div>
+           <div class="box"><button>Math Review</button></div>     
+           </nav>
+   </header>
+<h1>Hydraulics</h1>
+   <main>
+     <article>
+<section>
+  <h2>Fluid Dynamics</h2>
+  <h3>Head</h3>
+  <p>Understanding factors that affect fluid weight is critical for ensuring adequete pump inlet conditions.</p>
+  <h4>Calculate Pressure Generated from Positive Head</h4>
+  <form name="formcalc">
+    Enter Positive Head(ft): <input type="text" name="txtposhead">
+    Enter Specific Gravity: <input type="text" name="txtspecgrav">
+    Gauge pressure generated from Positive head:<input type="text" name="txtres">
+      
+      <input type="button" value="Calculate" onclick="inletpressure()">
+  </form>
+</section>
+     </article>
+   </main>
+   
+   <footer>
+   </footer>
+<script src="script.js">
+</script>
+<body>
+</html>

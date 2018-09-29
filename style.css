@@ -1,0 +1,46 @@
+body {
+	background-color: rgb(193,193,193)
+}
+
+header {
+	background-color: rgb(148,148,148)
+}
+
+.pressurespike {
+
+position: relative;
+top: 3rem;
+left: 5%;
+
+
+}
+
+h1 {
+
+	color: rgb(230,230,230);
+	font-family: Trebuchet MS;
+color: rgb(50,50,50);
+}
+#mainnav {
+font-family: Trebuchet MS;
+position: relative;
+left: 80%;
+bottom: 3rem;
+color: rgb(230,230,230);
+
+}
+button {
+	padding: 10px 10px 10px 10px;
+
+}
+
+#container {
+display: inline-flex;
+
+}
+.box {
+ 
+}
+main {
+	color: rgb(50,50,50);
+}
