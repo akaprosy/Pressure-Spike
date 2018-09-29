@@ -23,6 +23,29 @@ function area() {
 	area=force/pressure;
 	document.formcalc4.txtarea.value=area;
 }
+/*Function for calculating area of a cylinder*/
+function areacyl() {
+	let diameter, area;
+	diameter=Number(document.formcalc5.txtdia.value);
+	area=diameter*.7854;
+	document.formcalc5.txtarea.value=area;
+}
+/*Fuction for velocity formulas. Find Q*/
+function velocityone() {
+	let stroke, time;
+	stroke=Number(document.formcalc6.txtstroke.value);
+	time=Number(document.formcalc6.txttime.value);
+	velocity=stroke*(60/time);
+	document.formcalc6.txtvelocity.value=velocity;
+}
+/*Function for velocity given flow and area*/
+function velocitytwo() {
+	let flow, area;
+	flow=Number(document.formcalc7.txtflow.value);
+	area=Number(document.formcalc7.txtarea.value);
+	velocity=(flow*231)/area;
+	document.formcalc7.txtvelocity.value=velocity;
+}
 /*Function for calculating Head pressure*/
 function inletpressure() {
 	let positiveHead,specificGravity, res;

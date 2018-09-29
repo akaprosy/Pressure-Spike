@@ -20,10 +20,12 @@
     <br>
     <br>
     <!--Navigation panal by subject-->
-     <nav id="container">      
+     <nav id="container">   
+     <div class="box"><button>Home</button></div>   
        <div class="box"><button>Mechanical</button></div>
         <div class="box"><button>Hydraulics</button></div>
          <div class="box"><button>Pneumatics</button></div>
+         <div class="box"><button>Mechanical</button></div>
           <div class="box"><button>Electrical</button></div>
            <div class="box"><button>Controls</button></div>
            <div class="box"><button>Math Review</button></div>     
@@ -58,8 +60,35 @@
     Area(in<sup>2</sup>) = <input type="text" name="txtarea">
     <input type="button" value="Calculate" onclick="area()">
   </form>
+  <br>
+  <!--Calculate area of a cylinder-->
+  <h4>Calculate area of a cylinder(Area = diameter<sup>2</sup> x .7854)</h4>
+  <form name="formcalc5">
+    Enter diameter in inches: <input type="text" name="txtdia">
+    Area(in<sup>2</sup>) = <input type="text" name="txtarea">
+    <input type="button" value="Calculate" onclick="areacyl()">
+  </form>
+<br>
+  <h3>Cylinder Velocity formulas</h3>
+  <!--Find velocity given stroke and time-->
+  <h4>Find velocity fo a cylinder(Velocity<sub>in/min</sub> = Stroke<sub>in</sub> x (60<sub>sec/min</sub> / Time<sub>sec</sub>)</h4>
+  <form name="formcalc6">
+    Enter Stroke<sub>in</sub>: <input type="text" name="txtstroke">
+    Enter Time<sub>sec</sub>: <input type="text" name="txttime">
+    Velocity<sub>in/min</sub> = <input type="text" name="txtvelocity">
+    <input type="button" value="Calculate" onclick="velocityone()">
+  </form>
+  <!--Find velocity given flow and area-->
+  <h4>Find cylinder velocity(Velocity = (Flow<sub>gpm</sub> x 231) / Area<sub>in<sup>2</sup></sub>)</h4>
+    <form name="formcalc7">
+    Enter Flow<sub>gpm</sub>: <input type="text" name="txtflow">
+    Area(in<sup>2</sup>) = <input type="text" name="txtarea">
+    Velocity<sub>in/min</sub> = <input type="text" name="txtvelocity">
+    <input type="button" value="Calculate" onclick="velocitytwo()">
+  </form>
+  <!--Fluid dynamics section-->
   <h2>Fluid Dynamics</h2>
-  <h3>Head</h3>
+  <h3>Head(Inlet pressure<sub>psig</sub> = Specific Gravity x .433<sub>psi/ft-H<sub>2</sub>O</h3>
   <p>Understanding factors that affect fluid weight is critical for ensuring adequete pump inlet conditions.</p>
   <!--User inputs positive head and specific gravity in text field. Result is displayed in Gauge Pressure Generated from Positive Head text box-->
   <h4>Calculate Pressure Generated from Positive Head</h4>
