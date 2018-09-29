@@ -19,7 +19,7 @@
  </div>
     <br>
     <br>
-    
+    <!--Navigation panal by subject-->
      <nav id="container">      
        <div class="box"><button>Mechanical</button></div>
         <div class="box"><button>Hydraulics</button></div>
@@ -33,9 +33,35 @@
    <main>
      <article>
 <section>
+  <h2>Fluid Power Foundations</h2>
+  <h3><b>Pascals Law(F = P x A) -</b><i> Pressure applied on a confined fluid is applied equally, in all directions, with equal force on all equal areas</i></h3>
+  <!--Calculate force-->
+  <form name="formcalc2">
+    Enter pressure(psi): <input type="text" name="txtpress">
+    Enter Area(in<sup>2</sup>): <input type="text" name="txtarea">
+    Force(lbs) = <input type="text" name="txtforce">
+    <input type="button" value="Calculate" onclick="force()">
+  </form>
+  <br>
+ <!-- Calculate pressure-->
+    <form name="formcalc3">
+    Enter Force(lbs): <input type="text" name="txtforce">
+    Enter Area(in<sup>2</sup>): <input type="text" name="txtarea">
+    Pressure(psi) = <input type="text" name="txtpress">
+    <input type="button" value="Calculate" onclick="pressure()">
+  </form>
+  <br>
+  <!-- Calculate area-->
+    <form name="formcalc4">
+    Enter Force(lbs): <input type="text" name="txtforce">
+    Enter Pressure(psi): <input type="text" name="txtpress">
+    Area(in<sup>2</sup>) = <input type="text" name="txtarea">
+    <input type="button" value="Calculate" onclick="area()">
+  </form>
   <h2>Fluid Dynamics</h2>
   <h3>Head</h3>
   <p>Understanding factors that affect fluid weight is critical for ensuring adequete pump inlet conditions.</p>
+  <!--User inputs positive head and specific gravity in text field. Result is displayed in Gauge Pressure Generated from Positive Head text box-->
   <h4>Calculate Pressure Generated from Positive Head</h4>
   <form name="formcalc">
     Enter Positive Head(ft): <input type="text" name="txtposhead">
@@ -44,6 +70,7 @@
       
       <input type="button" value="Calculate" onclick="inletpressure()">
   </form>
+
 </section>
      </article>
    </main>
